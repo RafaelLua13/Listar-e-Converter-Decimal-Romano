@@ -108,8 +108,8 @@ def main():
         B = input("Digite o destino em decimal: ")
 
         invalido = 0
-        if A.isnumeric() == True: 
-          if B.isnumeric() == True:
+        if A.isnumeric() == True and int(A) > 0: 
+          if B.isnumeric() == True and int(B) > 0:
             print("\n")
             for num in range(int(A),int(B)+1):
               print(num,"->",decimalRomano(num))
