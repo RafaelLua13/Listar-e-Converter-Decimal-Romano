@@ -73,14 +73,10 @@ def decimalRomano(x):
   if x == 0:
     return final
   
-  stringRomano = str(x)
-  cent = stringRomano[0]
-  dez = stringRomano[1]
-  unid = stringRomano[2]
 
-  #cent = (x - x%100)/100
-  #dez = (x%100 - x%10)/10
-  #unid = (x%10)
+  cent = (x - x%100)/100
+  dez = (x%100 - x%10)/10
+  unid = (x%10)
 
 
   final += centena[int(cent)]
