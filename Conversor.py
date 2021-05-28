@@ -134,10 +134,9 @@ def main():
           else:
             
             
-            if dec.isnumeric() == True:
+            if dec.isnumeric() == True and int(dec) > 0:
               print("\n")
-              if dec > 0:
-                print(dec,"=",decimalRomano(int(dec)),"\n\n")
+              print(dec,"=",decimalRomano(int(dec)),"\n\n")
             else:
               print("\nFormato invalido :o")
               break
